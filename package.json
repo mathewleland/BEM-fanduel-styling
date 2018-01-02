@@ -1,0 +1,17 @@
+{
+  "name": "fanduel-challenge",
+  "version": "1.0.0",
+  "description": "Front End Coding Challenge for Fanduel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mathew Leland",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "jshint": "^2.9.5"
+  }
+}

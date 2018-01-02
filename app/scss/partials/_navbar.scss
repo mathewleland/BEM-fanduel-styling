@@ -1,0 +1,62 @@
+.navbar {
+  height: 65px;
+  background-color: $navbar-color;
+  width: 100%;
+  margin-top: -15px;
+
+
+  div {
+    display: inline;
+  }
+
+  img {
+    max-width: 150px;
+    max-height: 35px;
+    display:inline;
+  }
+  
+  @at-root #{&}__navText {
+    height: 100%;
+    display: inline;
+    list-style: none;
+    color: $navText;
+    padding: 0 10px;
+    margin: 20px 0;
+    font-size: 12px;
+    border-right: 1px solid $hoverBackground;
+
+    @at-root #{&}--balance {
+      display: inline;
+      border: none;
+      text-align: right;
+      font-size: 12px;
+      margin-top: 15px;
+      text-decoration: none;
+      color: $navText;
+      font-weight: bold;
+    }
+  }
+
+  .active {
+    background-color: red;
+    height: 100%;
+    width: 100%;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+
+  button {
+    background-color: $addFunds;
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+    border: none;
+
+  }
+}

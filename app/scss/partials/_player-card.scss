@@ -1,0 +1,27 @@
+.player-card {
+  width: 100%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 75px auto 95px;
+  border-bottom: 1px solid lightgray;
+
+  @at-root #{&}__play-text {
+    @at-root #{&}--moment {
+      color:$descText;
+      font-size: 10px;
+    }
+
+    @at-root #{&}--description {
+      color: black;
+      font-size: 12px;
+      margin-top: -5px;
+    }
+  }
+
+  @at-root #{&}__updated-score {
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
