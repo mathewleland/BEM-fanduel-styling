@@ -20,7 +20,7 @@
     display: inline;
     list-style: none;
     color: $navText;
-    padding: 0 10px;
+    padding: 0 15px;
     margin: 20px 0;
     font-size: 12px;
     border-right: 1px solid $hoverBackground;
@@ -34,11 +34,12 @@
       text-decoration: none;
       color: $navText;
       font-weight: bold;
+      padding: 0 10px;
     }
   }
 
   .active {
-    background-color: red;
+    background-color: $active-background;
     height: 100%;
     width: 100%;
   }
@@ -52,7 +53,7 @@
   }
 
   button {
-    background-color: $addFunds;
+    background-color: $activeButton;
     border-radius: 3px;
     color: white;
     padding: 5px;
