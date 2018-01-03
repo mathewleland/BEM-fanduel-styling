@@ -1,0 +1,91 @@
+.score-ticker {
+  width: 100%;
+  height: 110px;
+  background-color: $navbar-color;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+
+  @at-root #{&}__sport-tabs {
+    height: 30px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-auto-columns: 150px;
+    list-style: none;
+    margin-left: 20px;
+
+    @at-root #{&}--active {
+      // margin-left: 20px;
+      background-color: $activeButton;
+      color: white;
+      padding-left: 10px;
+    }
+
+    @at-root #{&}--inactive {
+      margin-left: 15px;
+      padding-left: 10px;
+      color: lightgray;
+      border-right: 1px solid lightgray;
+    }
+  }
+
+  .games {
+    display: grid;
+    grid-template-columns: 20px 550px 100px 100px auto;
+    background-color: $gameInfo;
+
+    
+    @at-root #{&}__game {
+      height: 90px;
+      display: grid;
+      background-color: $gameInfo;
+      border-right: 1px solid lightgray;
+      color: lightgray;
+      grid-template-columns: 5fr 1fr;
+      grid-template-rows: 15px 15px 15px;
+      text-align: center;
+
+
+      @at-root #{&}--open {
+        // if a game has been expanded, use these attributes to overrule above rules
+        display: grid;
+        grid-template-columns: 150px 200px 200px;
+        background-color: $active-background;
+        color: white;
+      }
+
+      @at-root #{&}-score--team {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        text-transform: uppercase;
+        margin-bottom: -5px;
+      }
+
+      @at-root #{&}--detail {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-top: 5px;
+      }
+
+      @at-root #{&}--player-detail {
+        color: white;
+        margin-top: -2px;
+        line-height: 0px;
+        text-align: left;
+      }
+
+    }
+
+    .small {
+      font-size: .7em;
+      text-align: left;
+    }
+    
+    .scroll-games {
+      width: 15px;
+      padding-top: 20px;
+      padding-left: 4px;
+      color: lightgray;
+    }
+  }
+}
