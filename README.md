@@ -2,6 +2,8 @@
 
 This is a recreation of the FanDuel live game page, using BEM methodology and SASS preprocessing.  
 
+[Check out the live version of it here!](https://s3-us-west-2.amazonaws.com/fanduel-challenge/index.html)
+
 ## Employ CSS Grid everywhere! 🌎 🌍 🌏
 
 Instead of using tables for just about all the data on this page, I tried to create grids within grids within grids everywhere I can.  This helps not only make the html easier to write, but makes the page quite a bit more responsive to to a wider range of screen sizes.  When you adjust the screen size, many of the grids depend on the grid's fractional units (fr) to automatically adjust how much space the team name gets and what's left for the team score.  This is much more scalable for adding in data too, than working with percentages, as you can just add in more and more data with automatic shares of the grid.  Something that *is lacking* is a mobile view, but it just unfortunately wasn't feasible with how much time I was able to put into the project.  BUT just about every browser size, from a tablet to a 27" monitor will have a great view of this current page.  If I were to build a mobile view, the navbar would need a lot of redesign and retooling, while the content would largely stay the same, except with the 'your-scoring' card being flexed to the bottom.
