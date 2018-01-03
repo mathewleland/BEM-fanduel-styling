@@ -11,8 +11,6 @@ a {
   background-color: #2d363b;
   width: 100%;
   margin-top: -15px; }
-  .navbar div {
-    display: inline; }
   .navbar img {
     max-width: 150px;
     max-height: 35px;
@@ -37,9 +35,10 @@ a {
       font-weight: bold;
       padding: 0 10px; }
   .navbar .active {
-    background-color: red !important;
-    height: 100%;
-    width: 100%; }
+    background-color: #616a71;
+    height: 45px;
+    margin-top: 15px;
+    padding-top: 5px; }
   .navbar .left {
     float: left; }
   .navbar .right {
@@ -49,7 +48,8 @@ a {
     border-radius: 3px;
     color: white;
     padding: 5px;
-    border: none; }
+    border: none;
+    cursor: pointer; }
 
 .content {
   width: 95%;
@@ -108,27 +108,27 @@ a {
   padding: 20px 0px;
   height: 70px; }
 
-.teamInfo {
+.team-info {
   display: grid;
   justify-content: space-between;
   grid-template-columns: 1fr 1fr;
   text-align: center;
   padding-top: 25px; }
-  .teamInfo__teamName {
+  .team-info__teamName {
     text-transform: uppercase;
     line-height: 22px;
     font-size: 22px; }
-  .teamInfo__teamScore {
+  .team-info__teamScore {
     font-size: 64px;
     font-weight: 800;
     margin-top: -25px; }
-  .teamInfo__teamName--team1 {
+  .team-info__teamName--team1 {
     color: #fdbb00; }
-  .teamInfo__teamScore--team1 {
+  .team-info__teamScore--team1 {
     color: #fdbb00; }
-  .teamInfo__teamName--team2 {
+  .team-info__teamName--team2 {
     color: #0079c5; }
-  .teamInfo__teamScore--team2 {
+  .team-info__teamScore--team2 {
     color: #0079c5; }
 
 .gameInfo {
@@ -224,7 +224,8 @@ a {
     grid-template-columns: 150px 150px 150px;
     grid-auto-columns: 150px;
     list-style: none;
-    margin-left: 20px; }
+    margin-left: 20px;
+    cursor: pointer; }
     .score-ticker__sport-tabs--active {
       background-color: #70aa3d;
       color: white;
