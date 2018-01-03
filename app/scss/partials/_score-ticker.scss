@@ -13,6 +13,7 @@
     grid-auto-columns: 150px;
     list-style: none;
     margin-left: 20px;
+    cursor: pointer;
 
     @at-root #{&}--active {
       // margin-left: 20px;
